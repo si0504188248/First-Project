@@ -5,6 +5,7 @@
 
 
 
+
 ## When should it be used?
 You should use K3s in any situation where you want the power of Kubernetes without the heavy overhead and complexity of the standard version. It is perfect for:
 * **Automated Testing (CI/CD):** When you need to spin up a cluster quickly to run tests.
