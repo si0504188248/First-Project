@@ -1,0 +1,46 @@
+[33m232d09d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/convert-markdown-version1[m[33m, [m[1;31morigin/feature/convert-markdown-version1[m[33m)[m MarkDown to PDF
+[33me87f64c[m[33m ([m[1;32mfeature/RGB-version1[m[33m)[m MarkDown to PDF
+[33m85da5be[m MarkDown to PDF
+[33m5658991[m MD אם PDF
+[33ma469768[m[33m ([m[1;31morigin/feature/RGB-version1[m[33m)[m RGB histogram
+[33mc7aeefa[m[33m ([m[1;31morigin/feature/fastapi-server-version1[m[33m, [m[1;32mfeature/fastapi-server-version1[m[33m)[m FastAPI server
+[33m7ba9c76[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m FastAPI server
+[33m4f223d1[m Merge pull request #20 from si0504188248/feature/numpy
+[33m37880e9[m[33m ([m[1;31morigin/feature/numpy[m[33m)[m Add solution for task 7
+[33mbe4f2e6[m Update k3s_description.md
+[33mb553178[m Merge pull request #19 from si0504188248/task-10-k3s-description
+[33md48fead[m[33m ([m[1;31morigin/task-10-k3s-description[m[33m)[m Tamar: Task 10 - Added K3s description document. Closes #XX
+[33m4fd3523[m Merge pull request #17 from si0504188248/feature/numpy
+[33m64cb792[m Add solution for task 1
+[33m8811aa8[m Merge pull request /feature/fastapi-server-fixed
+[33m6426c4e[m[33m ([m[1;31morigin/feature/fastapi-server-fixed[m[33m)[m Merge branch 'main' into feature/fastapi-server-fixed
+[33ma56c76e[m Merge pull request #14 from si0504188248/feature/vitepress-site
+[33mdf407a1[m[33m ([m[1;31morigin/feature/vitepress-site[m[33m)[m Tamar: Task 3 - VitePress site documentation completed
+[33mda8ae87[m fix: restore fastAPIServer and update logic to support list of users
+[33m1b68b32[m solution for Python Docker
+[33m43aaf1c[m[33m ([m[1;31morigin/feature/python-docker[m[33m)[m Merge branch 'main' into feature/python-docker
+[33m3ac9de7[m Solution for Task5
+[33m6207a14[m Rename folder to Task9
+[33m0a2726c[m Update converter.py
+[33m83261f9[m Delete Task1/fastAPI.py
+[33me62863f[m Merge pull request #11 from si0504188248/feature/fastapi-server
+[33mdf2d94b[m[33m ([m[1;31morigin/feature/fastapi-server[m[33m)[m Add solution for task 1
+[33mc7b62d5[m Merge pull request #10 from si0504188248/feature/coordinate-conversion
+[33me9f6134[m Add Dockerfile with ffmpeg installation
+[33ma63ef4c[m[33m ([m[1;31morigin/feature/coordinate-conversion[m[33m)[m Tamar: Final Task 6 with user input interface
+[33m51c7e28[m[33m ([m[1;31morigin/feature/docker-ffmpeg[m[33m)[m Add files via upload
+[33mcae90b7[m Add Dockerfile with ffmpeg
+[33m918de1b[m Merge pull request #7 from si0504188248/feature/typer-cli-tool
+[33mb197d64[m[33m ([m[1;31morigin/feature/typer-cli-tool[m[33m)[m Tamar: task 2 complete and tested
+[33m6488a60[m FastAPI solution task 1
+[33m9e3888a[m Add solution for task 1
+[33ma1d668c[m Merge password strength solution
+[33m0cdeb7a[m Delete README.md
+[33mdcab058[m[33m ([m[1;31morigin/feature/password-strength[m[33m)[m Delete main.py
+[33m01c19fc[m Add files via upload
+[33mc1d6e13[m Add files via upload
+[33mb5dd517[m Delete my-task/main.py
+[33m7d0163d[m Delete main.py
+[33m8a05622[m Add files via upload
+[33m2f99420[m Update README.md
+[33m823fe83[m Initial commit

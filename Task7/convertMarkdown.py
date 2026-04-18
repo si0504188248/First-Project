@@ -16,4 +16,8 @@ with open("output.pdf", "wb") as f:
 print("PDF created successfully")
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
