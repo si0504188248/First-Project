@@ -2,7 +2,7 @@ from markdown_it import MarkdownIt
 from xhtml2pdf import pisa
 from io import BytesIO
 import os
-
+# final version
 md = MarkdownIt()
 path = input("enter the path of your file: ").strip()
 if not os.path.isfile(path):
@@ -16,8 +16,7 @@ with open("output.pdf", "wb") as f:
 print("PDF created successfully")
 
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
+
+
 
