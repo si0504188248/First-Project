@@ -14,3 +14,5 @@ html_content = md.render(content)
 with open("output.pdf", "wb") as f:
     pisa.CreatePDF(html_content, dest=f)
 print("PDF created successfully")
+
+
