@@ -28,3 +28,4 @@ async def get_last_payloads():
 
     last_10 = [json.loads(line) for line in lines[-10:] if line.strip()]
     return last_10
+
