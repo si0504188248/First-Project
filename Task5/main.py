@@ -9,4 +9,5 @@ container = client.containers.run(
 
 result = container.exec_run("hostname")
 print("Container ID:", container.id)
+
 print("Hostname:", result.output.decode())
