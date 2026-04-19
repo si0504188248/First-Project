@@ -1,7 +1,6 @@
 import docker
 
 client = docker.from_env()
-
 container = client.containers.run(
     "busybox",
     "sleep 1000",
