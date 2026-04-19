@@ -5,7 +5,6 @@ def has_sequence(password):
             return True
     return False
 
-
 def is_strong_password(password):
     if len(password) < 8:
         return False
