@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 def has_sequence(password):
     for i in range(len(password) - 2):
         if ord(password[i]) + 1 == ord(password[i+1]) and \
@@ -7,29 +10,24 @@ def has_sequence(password):
 
 
 def is_strong_password(password):
-    if len(password) < 8:
-        return False
+    errors = []
 
-    if not any(c.islower() for c in password):
-        return False
+    rules = [
+        (lambda p: len(p) >= 8, "Password must be at least 8 characters long"),
+        (lambda p: any(c.islower() for c in p), "Must contain a lowercase letter"),
+        (lambda p: any(c.isupper() for c in p), "Must contain an uppercase letter"),
+        (lambda p: any(c.isdigit() for c in p), "Must contain a digit"),
+        (lambda p: any(not c.isalnum() for c in p), "Must contain a special character"),
+        (lambda p: not any(count > 2 for count in Counter(p).values()),
+         "No character can be repeated more than twice"),
+        (lambda p: not has_sequence(p),
+         "Must not contain 3 consecutive characters sequence"),
+    ]
 
-    if not any(c.isupper() for c in password):
-        return False
+    for check, message in rules:
+        if not check(password):
+            errors.append(message)
 
-    if not any(c.isdigit() for c in password):
-        return False
-
-    if not any(not c.isalnum() for c in password):
-        return False
-
-    from collections import Counter
-    counts = Counter(password)
-    if any(count > 2 for count in counts.values()):
-        return False
-
-    if has_sequence(password):
-        return False
-
-    return True
+    return (len(errors) == 0, errors)
 
 
