@@ -1,23 +1,42 @@
+import os
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-img = Image.open("image.jpg")
-pixels = np.array(img)
+HIST_BINS = 256
+HIST_ALPHA = 0.5
+HIST_COLORS = ('red', 'green', 'blue')
+HIST_LABELS = ('R', 'G', 'B')
 
-r = pixels[:, :, 0].flatten()
-g = pixels[:, :, 1].flatten()
-b = pixels[:, :, 2].flatten()
+def load_img(image_path):
+    try:
+        with (Image.open(image_path)) as img:
+            return np.array(img.convert('RGB'))
+    except Exception:
+        return None
 
-plt.hist(r, bins=256, color='red', alpha=0.5, label='R')
-plt.hist(g, bins=256, color='green', alpha=0.5, label='G')
-plt.hist(b, bins=256, color='blue', alpha=0.5, label='B')
+def rgb_hist(colors,labels,pixels):
+    for i, (color, label) in enumerate(zip(colors, labels)):
+        var = pixels[:, :,i].flatten()
+        plt.hist(var, bins=HIST_BINS, color=color, alpha=HIST_ALPHA, label=label)
 
-plt.legend()
-plt.title("RGB Histogram")
-plt.xlabel("Intensity")
-plt.ylabel("Count")
-plt.show()
+def vision():
+    plt.legend()
+    plt.title("RGB Histogram")
+    plt.xlabel("Intensity")
+    plt.ylabel("Count")
+    plt.show()
+
+if __name__ == '__main__':
+    while True:
+        path = input("Enter your image path")
+        pixels = load_img(path)
+        if pixels is not None:
+            break
+        print("invalid path, please try again.\n")
+    plt.figure()
+    rgb_hist(HIST_COLORS, HIST_LABELS, pixels)
+    vision()
 
 
 
